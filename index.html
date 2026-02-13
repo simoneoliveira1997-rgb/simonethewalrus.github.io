@@ -1,12 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>O meu site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simone — textos e desenhos</title>
+  <meta name="description" content="Textos e desenhos." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Olá mundo</h1>
-  <p>Este é o meu site.</p>
+  <header class="wrap header">
+    <a class="logo" href="/">Simone</a>
+
+    <nav class="nav">
+      <a href="#textos">Textos</a>
+      <a href="#desenhos">Desenhos</a>
+      <a href="#sobre">Sobre</a>
+      <a class="btn" href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">Nenhures, em lado algum</p>
+      <h1>Textos curtos e desenhos. Um arquivo pessoal, sem barulho.</h1>
+      <p class="lead">
+        Publico quando calha — mas com intenção. Podes ler, guardar, e voltar.
+      </p>
+      <div class="actions">
+        <a class="btn" href="#textos">Começar a ler</a>
+        <a class="btn ghost" href="#sobre">Quem sou</a>
+      </div>
+    </section>
+
+    <section id="textos" class="section">
+      <div class="section-head">
+        <h2>Textos</h2>
+        <p>Os mais recentes.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <p class="meta">12 Fev 2026 · 3 min</p>
+          <h3><a href="#">Título do texto #1</a></h3>
+          <p>Um parágrafo de resumo. Duas frases chegam.</p>
+        </article>
+
+        <article class="card">
+          <p class="meta">02 Fev 2026 · 4 min</p>
+          <h3><a href="#">Título do texto #2</a></h3>
+          <p>Outro resumo curto. Direto, sem enfeites.</p>
+        </article>
+
+        <article class="card">
+          <p class="meta">20 Jan 2026 · 2 min</p>
+          <h3><a href="#">Título do texto #3</a></h3>
+          <p>Mais um resumo. Depois podes transformar isto em páginas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="desenhos" class="section">
+      <div class="section-head">
+        <h2>Desenhos</h2>
+        <p>Alguns trabalhos (podes substituir por imagens tuas).</p>
+      </div>
+
+      <div class="grid images">
+        <figure class="imgcard">
+          <div class="ph">Imagem 1</div>
+          <figcaption>Legenda curta.</figcaption>
+        </figure>
+        <figure class="imgcard">
+          <div class="ph">Imagem 2</div>
+          <figcaption>Legenda curta.</figcaption>
+        </figure>
+        <figure class="imgcard">
+          <div class="ph">Imagem 3</div>
+          <figcaption>Legenda curta.</figcaption>
+        </figure>
+      </div>
+      <p class="hint">Quando tiveres imagens: mete em <code>/images</code> e eu digo-te como ligar aqui.</p>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="section-head">
+        <h2>Sobre</h2>
+        <p>Uma bio curta (podes ajustar ao teu tom).</p>
+      </div>
+
+      <div class="card prose">
+        <p>
+          Sou a Simone. Escrevo crónicas e faço desenhos. Vivo em Innsbruck,
+          mas a cabeça ainda visita outras geografias.
+        </p>
+        <p>
+          Este site é um sítio simples para publicar sem redes sociais — e para
+          as coisas não se perderem.
+        </p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="section-head">
+        <h2>Contacto</h2>
+        <p>Sem formulários por agora (mais simples e funciona sempre).</p>
+      </div>
+
+      <div class="card">
+        <p>
+          Email: <a href="mailto:teuemail@exemplo.com">teuemail@exemplo.com</a><br/>
+          Substack: <a href="#">link</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Simone. Feito com calma.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

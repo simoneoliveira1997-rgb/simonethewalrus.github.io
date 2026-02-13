@@ -1,6 +1,10 @@
+.logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+}
 
-/* LOGO */
-.logo { width: 300px;  }
 /* TÍTULO */
 h1 {
   font-size: 28px;

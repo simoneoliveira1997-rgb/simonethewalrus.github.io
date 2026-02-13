@@ -3,120 +3,133 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Simone — textos e desenhos</title>
-  <meta name="description" content="Textos e desenhos." />
+  <title>Nenhures — Simone</title>
+  <meta name="description" content="Textos e desenhos. Um arquivo pessoal." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="wrap header">
-    <a class="logo" href="/">Simone</a>
+    <a class="mark" href="#">NENHURES</a>
 
     <nav class="nav">
-      <a href="#textos">Textos</a>
-      <a href="#desenhos">Desenhos</a>
-      <a href="#sobre">Sobre</a>
-      <a class="btn" href="#contacto">Contacto</a>
+      <a href="#textos">TEXTOS</a>
+      <a href="#desenhos">DESENHOS</a>
+      <a href="#sobre">SOBRE</a>
+      <a href="#contacto" class="tag">CONTACTO</a>
     </nav>
   </header>
 
   <main class="wrap">
     <section class="hero">
-      <p class="kicker">Nenhures, em lado algum</p>
-      <h1>Textos curtos e desenhos. Um arquivo pessoal, sem barulho.</h1>
+      <p class="kicker">nenhures, em lado algum</p>
+      <h1>palavras + imagens<br/>sem barulho.</h1>
       <p class="lead">
-        Publico quando calha — mas com intenção. Podes ler, guardar, e voltar.
+        Um site simples para publicar textos e desenhos — e deixar coisas guardadas
+        num canto decente da internet.
       </p>
-      <div class="actions">
-        <a class="btn" href="#textos">Começar a ler</a>
-        <a class="btn ghost" href="#sobre">Quem sou</a>
+
+      <div class="row">
+        <a class="btn" href="#textos">LER</a>
+        <a class="btn ghost" href="#desenhos">VER</a>
       </div>
     </section>
 
     <section id="textos" class="section">
       <div class="section-head">
-        <h2>Textos</h2>
-        <p>Os mais recentes.</p>
+        <h2>TEXTOS</h2>
+        <p class="muted">os mais recentes</p>
       </div>
 
-      <div class="grid">
-        <article class="card">
-          <p class="meta">12 Fev 2026 · 3 min</p>
-          <h3><a href="#">Título do texto #1</a></h3>
-          <p>Um parágrafo de resumo. Duas frases chegam.</p>
-        </article>
+      <article class="post">
+        <p class="meta">12 FEV 2026 · 3 MIN</p>
+        <h3><a href="#">Título do texto #1</a></h3>
+        <p>Resumo curto. Duas frases. Sem floreados.</p>
+      </article>
 
-        <article class="card">
-          <p class="meta">02 Fev 2026 · 4 min</p>
-          <h3><a href="#">Título do texto #2</a></h3>
-          <p>Outro resumo curto. Direto, sem enfeites.</p>
-        </article>
+      <article class="post">
+        <p class="meta">02 FEV 2026 · 4 MIN</p>
+        <h3><a href="#">Título do texto #2</a></h3>
+        <p>Outro resumo curto. Podes ir mudando à vontade.</p>
+      </article>
 
-        <article class="card">
-          <p class="meta">20 Jan 2026 · 2 min</p>
-          <h3><a href="#">Título do texto #3</a></h3>
-          <p>Mais um resumo. Depois podes transformar isto em páginas.</p>
-        </article>
-      </div>
+      <article class="post">
+        <p class="meta">20 JAN 2026 · 2 MIN</p>
+        <h3><a href="#">Título do texto #3</a></h3>
+        <p>Mais um. Isto é só uma lista simples (zine vibes).</p>
+      </article>
+
+      <p class="note">
+        (Depois, se quiseres, transformamos cada texto numa página própria.)
+      </p>
     </section>
 
     <section id="desenhos" class="section">
       <div class="section-head">
-        <h2>Desenhos</h2>
-        <p>Alguns trabalhos (podes substituir por imagens tuas).</p>
+        <h2>DESENHOS</h2>
+        <p class="muted">amostras</p>
       </div>
 
-      <div class="grid images">
-        <figure class="imgcard">
-          <div class="ph">Imagem 1</div>
+      <!-- Troca estes blocos por imagens quando tiveres:
+           <img src="images/01.jpg" alt="..." /> -->
+      <div class="gallery">
+        <figure class="piece tilt-a">
+          <div class="ph">IMAGEM 01</div>
           <figcaption>Legenda curta.</figcaption>
         </figure>
-        <figure class="imgcard">
-          <div class="ph">Imagem 2</div>
+
+        <figure class="piece tilt-b">
+          <div class="ph">IMAGEM 02</div>
           <figcaption>Legenda curta.</figcaption>
         </figure>
-        <figure class="imgcard">
-          <div class="ph">Imagem 3</div>
+
+        <figure class="piece tilt-c">
+          <div class="ph">IMAGEM 03</div>
           <figcaption>Legenda curta.</figcaption>
         </figure>
       </div>
-      <p class="hint">Quando tiveres imagens: mete em <code>/images</code> e eu digo-te como ligar aqui.</p>
+
+      <p class="note">
+        Dica: cria a pasta <code>/images</code> e mete lá os ficheiros.
+      </p>
     </section>
 
     <section id="sobre" class="section">
       <div class="section-head">
-        <h2>Sobre</h2>
-        <p>Uma bio curta (podes ajustar ao teu tom).</p>
+        <h2>SOBRE</h2>
+        <p class="muted">curto e direto</p>
       </div>
 
-      <div class="card prose">
+      <div class="box">
         <p>
-          Sou a Simone. Escrevo crónicas e faço desenhos. Vivo em Innsbruck,
-          mas a cabeça ainda visita outras geografias.
+          Sou a Simone. Escrevo e desenho. Vivo em Innsbruck, mas a cabeça
+          volta muitas vezes ao passado e ao que ficou por dizer.
         </p>
-        <p>
-          Este site é um sítio simples para publicar sem redes sociais — e para
-          as coisas não se perderem.
+        <p class="muted">
+          Este site existe para não depender de redes sociais — e para as coisas
+          terem um sítio fixo.
         </p>
       </div>
     </section>
 
     <section id="contacto" class="section">
       <div class="section-head">
-        <h2>Contacto</h2>
-        <p>Sem formulários por agora (mais simples e funciona sempre).</p>
+        <h2>CONTACTO</h2>
+        <p class="muted">sem formulários</p>
       </div>
 
-      <div class="card">
+      <div class="box">
         <p>
           Email: <a href="mailto:teuemail@exemplo.com">teuemail@exemplo.com</a><br/>
-          Substack: <a href="#">link</a>
+          Substack: <a href="#">link</a><br/>
+          Instagram (opcional): <a href="#">link</a>
         </p>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Simone. Feito com calma.</p>
+      <span>© <span id="year"></span> NENHURES</span>
+      <span class="muted">feito com calma</span>
     </footer>
   </main>
 

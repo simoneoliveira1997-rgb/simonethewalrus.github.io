@@ -22,11 +22,13 @@ footer {
 
 /* MENU */
 .menu {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 40px;
-  padding: 20px 0;
-  border-bottom: 1px solid #333;
+  gap: 50px;
 }
 
 .menu a {
@@ -34,8 +36,11 @@ footer {
   color: #e6e6e6;
   font-size: 14px;
   letter-spacing: 2px;
+  text-transform: lowercase;
+  transition: opacity 0.2s ease;
 }
 
 .menu a:hover {
-  color: #7c5cff;
+  opacity: 0.5;
 }
+

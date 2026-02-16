@@ -19,3 +19,23 @@ footer {
   font-size: 14px;
   color: #777;
 }
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #e6e6e6;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.menu a:hover {
+  color: #7c5cff;
+}

@@ -1,20 +1,42 @@
-:root{
-  --bg: #efe89e;
-  --text: #4b4830;
+ @font-face {
+  font-family: "Novera";
+  src: url("fonts/Novera-ClassicRegular.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+
+  @font-face {
+  font-family: "Novera";
+  src: url("fonts/Novera-ClassicBold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+
+@font-face {
+  font-family: "Auriol";
+  src: url("fonts/AuriolLTStd-Bold) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  
+  :root{
+  --bg: #c1dbe8;
+  --text: #5b1427;
   --muted: #6f6f6f;
   --line: rgba(0,0,0,.15);
 }
 
-*{
-  box-sizing: border-box;
+  body{
+  font-family: "Novera", sans-serif;
+  color: #5b1427;
 }
 
-body{
-  margin:0;
-  font-family: Georgia, "Times New Roman", serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height:1.6;
+.name{
+  font-family: "Auriol", serif;
+}
+
+ 
+
+  font-family: "Auriol", serif;
+  font-family: "Noera", sans serif;
+}
 }
 
 /* layout */

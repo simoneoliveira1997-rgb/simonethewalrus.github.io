@@ -1,7 +1,7 @@
 body {
   font-family: 'VT323', monospace;
   font-size: 22px; /* opcional, dá mais vibe retro */
-  background-color: #000; /* opcional */
+  background-color: #cceaf2; /* opcional */
   color: #33ff33; /* opcional estilo terminal */
 }
 .logo {

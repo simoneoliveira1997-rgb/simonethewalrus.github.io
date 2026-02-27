@@ -1,64 +1,109 @@
-body {
-  font-family: 'VT323', monospace;
-  font-size: 22px; /* opcional, dá mais vibe retro */
-  background-color: #cceaf2; /* opcional */
-  color: #33ff33; /* opcional estilo terminal */
-}
-.logo {
-  width: 200px;
-  height: auto;
-  display: block;
-  margin: 40px auto;
+:root{
+  --bg: #efe89e;
+  --text: #4b4830;
+  --muted: #6f6f6f;
+  --line: rgba(0,0,0,.15);
 }
 
-/* TÍTULO */
-h1 {
-  font-size: 28px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-/* RODAPÉ */
-footer {
-  margin-top: 60px;
-  text-align: center;
-  font-size: 14px;
-  color: #777;
+*{
+  box-sizing: border-box;
 }
 
-/* MENU */
-.menu {
-  position: fixed;
-  top: 40px;
-  left: 0;
-  width: 100%;
+body{
+  margin:0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.6;
 }
 
-.menu a {
-  position: absolute;
-  text-decoration: none;
-  color: #e6e6e6;
-  font-size: 14px;
-  letter-spacing: 2px;
+/* layout */
+
+.layout{
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
 }
 
-/* posições manuais */
-.menu a:nth-child(1) { left: 10%; top: 0; }
-.menu a:nth-child(2) { left: 30%; top: 20px; }
-.menu a:nth-child(3) { left: 55%; top: -5px; }
-.menu a:nth-child(4) { left: 75%; top: 25px; }
-.menu a:nth-child(5) { left: 85%; top: 5px; }
+/* sidebar */
 
-.menu a:hover {
-  opacity: 0.5;
+.sidebar{
+  padding:40px 30px;
 }
 
-/* texto nenhures */
-.texto {
-  max-width: 520px;
-  margin: 180px auto;
+.portrait{
+  width:100%;
+  max-width:240px;
+  display:block;
+  margin-bottom:30px;
 }
 
+.name{
+  font-size:36px;
+  font-weight:400;
+  margin:0 0 20px;
+}
 
+.menu{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
 
+.menu a{
+  color: var(--text);
+  text-decoration:none;
+}
 
+.menu a:hover{
+  text-decoration:underline;
+}
+
+/* content */
+
+.content{
+  padding:60px 60px 80px;
+  max-width:900px;
+}
+
+.bio p{
+  margin-bottom:20px;
+}
+
+hr{
+  border:none;
+  border-top:1px solid var(--line);
+  margin:40px 0;
+}
+
+.highlights h2{
+  font-weight:400;
+  font-size:22px;
+  margin-bottom:20px;
+}
+
+.highlights ul{
+  padding-left:20px;
+}
+
+.highlights li{
+  margin-bottom:14px;
+}
+
+.link{
+  background:#ddd;
+  padding:2px 6px;
+  border-radius:4px;
+}
+
+/* responsive */
+
+@media (max-width: 900px){
+  .layout{
+    grid-template-columns: 1fr;
+  }
+
+  .content{
+    padding:40px 30px;
+  }
+}
